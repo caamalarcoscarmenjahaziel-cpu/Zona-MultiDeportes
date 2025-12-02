@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro Deportivo</title>
+    <link rel="stylesheet" href="css\estilo-formulario.css">
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h2>Registro de Usuarios</h2>
+        <form id="formularioRegistro">
+            
+            <div class="grupo-control">
+                <label for="nombreUsuario">Nombre de Usuario:</label>
+                <input type="text" id="nombreUsuario" name="nombreUsuario" required>
+            </div>
+
+            <div class="grupo-control">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="grupo-control">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+
+            <div class="grupo-control">
+                <label for="deporteFavorito">Cúal de los deportes 10 que mostramos en nuestra página fue tú favorito:</label>
+                <select id="deporteFavorito" name="deporteFavorito">
+                    <option value="Fútbol">Fútbol</option>
+                    <option value="Básquetbol">Básquetbol</option>
+                    <option value="Voleibol">Voleibol</option>
+                    <option value="Natación">Natación</option>
+                    <option value="Atletismo">Atletismo</option>
+                    <option value="Tenis">Tenis</option>
+                    <option value="Ciclismo">Ciclismo</option>
+                    <option value="Boxeo">Boxeo</option>
+                    <option value="Gimnasia">Gimnasia</option>
+                    <option value="Artes_Marciales">Artes Marciales</option>
+                </select>
+            </div>
+
+            <button type="submit" class="boton-enviar">Registrarse Ahora</button>
+            
+            <div id="mensaje" class="mensaje"></div>
+
+        </form>
+    </div>
+
+    <script src="..\funciones\registro.js"></script>
+</body>
+</html>

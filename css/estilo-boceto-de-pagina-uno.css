@@ -1,0 +1,110 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e7fdfe;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Secciones */
+main {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  background-color: #ffffff(189, 67, 67);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+}
+
+section h2 {
+  color: #07949c;
+  margin-bottom: 0.8rem;
+}
+
+/* Lista de reglas */
+.reglas ul {
+  padding-left: 1.2rem;
+}
+
+.reglas li {
+  margin-bottom: 0.5rem;
+}
+
+/* Multimedia */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.media-grid img, 
+.media-grid iframe {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Artículo */
+.articulo p {
+  text-align: justify;
+}
+
+/* Pie de página */
+footer {
+  background-color: #8ff4fa;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+} 

@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e7fdfe; /* Fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura de la vista */
+    margin: 0;
+}
+
+.contenedor-formulario {
+    background-color: #ffffff; /* Fondo del formulario blanco */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #07949c; /* Azul oscuro, color de cabecera */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #bbf9fc; /* Línea de color de acento */
+    padding-bottom: 10px;
+}
+
+/* --- Estilos de los Grupos de Control (Label + Input) --- */
+.grupo-control {
+    margin-bottom: 20px;
+}
+
+.grupo-control label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.grupo-control input,
+.grupo-control select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.grupo-control input:focus,
+.grupo-control select:focus {
+    border-color: #bbf9fc; /* Resalta el campo al ser seleccionado */
+    outline: none;
+}
+
+/* --- Estilo del Botón de Enviar --- */
+.boton-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #09bec8; /* Color de acento deportivo (rojo/rosa fuerte) */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #07949c; /* Color más oscuro al pasar el ratón */
+}
+
+/* --- Estilos de Mensajes (para JavaScript) --- */
+.mensaje {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    display: none; /* Oculto por defecto, JavaScript lo mostrará */
+}
+
+.mensaje.exito {
+    background-color: #d4edda;
+    color: #00ff00;
+    border: 1px solid #c3e6cb;
+}
+
+.mensaje.error {
+    background-color: #f8d7da;
+    color: #ff0000;
+    border: 1px solid #f5c6cb;
+}

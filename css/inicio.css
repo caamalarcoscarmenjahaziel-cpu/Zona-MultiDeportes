@@ -1,0 +1,147 @@
+
+/* RESETEO BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222;
+}
+
+/* ENCABEZADO Y LOGO */
+header {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #bbf9fc;
+}
+
+/* NAVEGACIÓN */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+nav ul li a {
+  color: rgb(26, 26, 26);
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #e7fdfe;
+  padding: 0.5rem 0.9rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #bbf9fc;
+}
+
+/* SECCIÓN DE BIENVENIDA */
+.bienvenida {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background-color: #bbf9fc;
+  margin: 1.5rem auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bienvenida h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.bienvenida p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Sección de Bienvenida Extra */
+.bienvenida-extra {
+  background-color: #bbf9fc; /* fondo claro */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bienvenida-extra:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.bienvenida-extra h2 {
+  color: #000000; 
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bienvenida-extra p {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #8ff4fa;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bienvenida {
+    padding: 1.5rem;
+  }
+
+  .login {
+    padding: 1.5rem;
+  }
+}

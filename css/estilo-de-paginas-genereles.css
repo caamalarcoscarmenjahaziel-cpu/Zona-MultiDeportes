@@ -1,0 +1,155 @@
+
+/* Reset y base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e7fdfe;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg,#fcfcfc,hsl(0, 0%, 100%));
+  color: #000000;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+header h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Secciones */
+section {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  color: #07949c;
+  margin-bottom: 0.6rem;
+  font-size: 1.25rem;
+}
+
+/* Listas */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Imagen circular */
+.imagen-redonda {
+  display: block;
+  margin: 1rem auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #02ffea1f;
+  box-shadow: 0 6px 18px rgba(3, 37, 65, 0.06);
+}
+
+/* Video */
+video {
+  display: block;
+  margin: 0.8rem auto;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;   
+    border-radius: 10px; 
+  
+  }
+
+/* Artículo: texto con lectura cómoda */
+.articulo p {
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+/* Footer */
+footer {
+  background: #8ff4fa;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.03);
+}
+
+/* Responsive tabs */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .imagen-redonda {
+    width: 140px;
+    height: 140px;
+  }
+
+  section {
+    padding: 0.9rem;
+  }
+}
+
+/* Responsivo móviles */
+@media (max-width: 480px) {
+  header {
+    padding: 1.2rem 0.6rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 0.95rem;
+  }
+
+  .imagen-redonda {
+    width: 120px;
+    height: 120px;
+  }
+
+  main {
+    padding: 0 0.8rem;
+  }
+
+  section h2 {
+    font-size: 1.05rem;
+  }
+}

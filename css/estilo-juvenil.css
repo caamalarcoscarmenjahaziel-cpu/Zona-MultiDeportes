@@ -1,0 +1,70 @@
+/* ===== SECCIÓN JUVENIL ===== */
+
+.juvenil-header {
+  background: linear-gradient(135deg, #93c4ca, #ede8f4);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 2em 1em;
+  border-bottom: 4px solid #62a9b2;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.juvenil-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Secciones */
+.juvenil-main section {
+  background: #f0fdff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.juvenil-main section:hover {
+  transform: scale(1.02);
+  background-color: #e1fcfe;
+}
+
+/* Títulos */
+.juvenil-main h2 {
+  color: #62afb2;
+  text-align: center;
+  border-bottom: 2px solid #e8f2f4;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Párrafos */
+.juvenil-main p {
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Citas motivacionales */
+.quote {
+  text-align: center;
+  font-style: italic;
+  background: #caf5f8;
+  padding: 10px;
+  border-left: 5px solid #e8f4f3;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: #b6d7db;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #93c2ca;
+  color: white;
+  border-top: 4px solid #ede8f4;
+}
