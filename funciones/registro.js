@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // --- Validación de Contraseña ---
         const MIN_LONGITUD_PASS = 6;
         if (contrasena.length < MIN_LONGITUD_PASS) {
-            mostrarMensaje('La Contraseña debe tener al menos ${MIN_LONGITUD_PASS} caracteres., error');
+            mostrarMensaje('La Contraseña debe tener al menos 6 caracteres., error');
             esValido = false;
         }
 
